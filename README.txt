@@ -1,1 +1,1 @@
-Hi Everyone looking at this repository. This discord bot is able to use gpt and a specifit command set by you to take in a quiry and output a response from CHATGPT models
+This Discord bot can use GPT and a specific command set by you to take in a query and output a response from the CHATGPT models. It is simple to use, and the only file that is needed to run is the main.py file 
