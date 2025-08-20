@@ -14,7 +14,7 @@ intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents) 
 @bot.event
 async def on_ready():
-    print(f"✅ Logged in as {bot.user} (ID: {bot.user.id})")
+    print(f" Logged in as {bot.user} (ID: {bot.user.id})")
 
 @bot.event
 async def on_member_join(member):
@@ -26,21 +26,21 @@ async def on_member_join(member):
 async def on_member_remove(member):
     channel = member.guild.system_channel
     if channel:
-        await channel.send(f"😢 {member.mention} has left the server.")
+        await channel.send(f" {member.mention} has left the server.")
 
 @bot.command()
 async def leg(ctx):
-    await ctx.send("@here GET ON LEAGUE 🕹️")
+    await ctx.send("@here GET ON LEAGUE ")
 
 
 @bot.command()
 async def udm(ctx, member: discord.User):
     """Sends a test DM to the mentioned user"""
     try:
-        await member.send("📩 This is a test! If you got this, my code works ✅")
-        await ctx.send(f"✅ Sent a DM to {member.mention}")
+        await member.send(" This is a test! If you got this, my code works ")
+        await ctx.send(f"Sent a DM to {member.mention}")
     except discord.Forbidden:
-        await ctx.send("⚠️ I can't send DMs to that user.")
+        await ctx.send(" I can't send DMs to that user.")
 
 
 @bot.command()
@@ -64,7 +64,7 @@ async def jake(ctx, *, message):
         await ctx.send(reply)
 
     except Exception as e:
-        await ctx.send(f"⚠️ Error: {e}")
+        await ctx.send(f"Error: {e}")
 
 
 # Run Bot 
