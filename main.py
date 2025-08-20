@@ -72,4 +72,4 @@ async def jake(ctx, *, message):
 if TOKEN:
     bot.run(TOKEN)
 else:
-    print("❌ No Discord TOKEN found. Check your .env file.")
+    print("No Discord TOKEN found. Check your .env file.")
